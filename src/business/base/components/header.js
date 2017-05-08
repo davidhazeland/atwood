@@ -7,7 +7,7 @@ const Header = (props) => {
   return (
     <div className="Header">
       <Menu pointing secondary>
-          <Menu.Item header>Ad Ruler</Menu.Item>
+          <Menu.Item header>Atwood</Menu.Item>
           <Menu.Item name='dashboard' active={activeItem === 'home'}/>
           <Menu.Item name='Advert Accounts' active={activeItem === 'messages'}/>
           <Menu.Menu position='right'>
