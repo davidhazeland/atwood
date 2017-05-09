@@ -1,16 +1,19 @@
-import React from 'react';
+require('semantic-ui-css/semantic.min.css');
 
-import Header from './header';
+import React from 'react';
+import {StyleRoot} from 'radium';
+
+import Header from '../containers/header'
 import Content from './content';
 
 const App = (props) => {
   return (
-    <div className="App">
-      <Header/>
+    <StyleRoot>
+      <Header path={props.path}/>
       <Content>
         {props.children}
       </Content>
-    </div>
+    </StyleRoot>
   );
 };
 

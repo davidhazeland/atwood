@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
-import AccountList from './components/account-list';
+import AccountList from './containers/account-list';
 
-export const route = path => (
+export default path => (
   <Route path={path}>
     <IndexRoute component={AccountList}/>
   </Route>

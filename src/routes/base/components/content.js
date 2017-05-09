@@ -7,5 +7,5 @@ export default ({children}) => {
     <Container>
       {children}
     </Container>
-  )
+  );
 }
