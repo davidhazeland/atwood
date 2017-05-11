@@ -1,16 +1,16 @@
-require('semantic-ui-css/semantic.min.css');
+require('semantic-ui-css/semantic.min.css')
 
-import React from 'react';
-import {StyleRoot} from 'radium';
+import React from 'react'
+import {StyleRoot} from 'radium'
 
 import { Switch, Route } from 'react-router'
 
 import Header from '../containers/header'
-import Content from './content';
+import Content from './content'
 
-import {component as AccountList} from 'business/account-list';
-import {component as AccountRuleList} from 'business/account-rule-list';
-import {component as RuleActivityList} from 'business/rule-activity-list';
+import {component as AccountList} from 'business/account-list'
+import {component as AccountRuleList} from 'business/account-rule-list'
+import {component as RuleActivityList} from 'business/rule-activity-list'
 
 const App = (props) => {
   return (
@@ -24,9 +24,9 @@ const App = (props) => {
         </Switch>
       </Content>
     </StyleRoot>
-  );
-};
+  )
+}
 
-App.propTypes = {};
+App.propTypes = {}
 
-export default App;
+export default App

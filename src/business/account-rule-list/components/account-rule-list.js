@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-import Header from './account-rule-list-header';
-import Data from './account-rule-list-data';
+import Header from './account-rule-list-header'
+import Data from './account-rule-list-data'
 
 const AccountRuleList = () => {
   return (
@@ -9,13 +9,13 @@ const AccountRuleList = () => {
       <Header/>
       <Data/>
     </div>
-  );
-};
+  )
+}
 
 AccountRuleList.propTypes = {
 
 }
 
-AccountRuleList.displayName = 'AccountRuleList';
+AccountRuleList.displayName = 'AccountRuleList'
 
-export default AccountRuleList;
+export default AccountRuleList

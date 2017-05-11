@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import {List, Grid, Button} from 'semantic-ui-react';
+import {List, Grid, Button} from 'semantic-ui-react'
 
 const data = [
   {
@@ -27,7 +27,7 @@ const data = [
     last3Days: '3.5X',
     last7Days: '3.5X'
   }
-];
+]
 
 const style = {
   marginTop: 20,
@@ -72,13 +72,13 @@ const AccountListData = () => {
         })}
       </List>
     </div>
-  );
-};
+  )
+}
 
 AccountListData.propTypes = {
 
 }
 
-AccountListData.displayName = 'AccountListData';
+AccountListData.displayName = 'AccountListData'
 
-export default AccountListData;
+export default AccountListData

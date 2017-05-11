@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-import Header from './rule-activity-list-header';
-import Data from './rule-activity-list-data';
+import Header from './rule-activity-list-header'
+import Data from './rule-activity-list-data'
 
 const RuleActivityList = () => {
   return (
@@ -9,13 +9,13 @@ const RuleActivityList = () => {
       <Header/>
       <Data/>
     </div>
-  );
-};
+  )
+}
 
 RuleActivityList.propTypes = {
 
 }
 
-RuleActivityList.displayName = 'RuleActivityList';
+RuleActivityList.displayName = 'RuleActivityList'
 
-export default RuleActivityList;
+export default RuleActivityList

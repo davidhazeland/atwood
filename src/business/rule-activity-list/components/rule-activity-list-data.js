@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import {Table} from 'semantic-ui-react';
+import {Table} from 'semantic-ui-react'
 
 const data = [
   {
@@ -15,7 +15,7 @@ const data = [
     checkedTime: '2017-05-06 16:00:10',
     result: '9 advert sets had turned off'
   }
-];
+]
 
 const style = {
   marginTop: 20,
@@ -44,13 +44,13 @@ const RuleActivityListData = () => {
         </Table.Body>
       </Table>
     </div>
-  );
-};
+  )
+}
 
 RuleActivityListData.propTypes = {
 
 }
 
-RuleActivityListData.displayName = 'RuleActivityListData';
+RuleActivityListData.displayName = 'RuleActivityListData'
 
-export default RuleActivityListData;
+export default RuleActivityListData

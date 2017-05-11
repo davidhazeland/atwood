@@ -20,4 +20,4 @@ const env = {
 module.exports = {
   ...base,
   ...env[process.env.NODE_ENV]
-};
+}

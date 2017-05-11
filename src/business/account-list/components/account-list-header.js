@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'
 
-import {Header, Button} from 'semantic-ui-react';
+import {Header, Button} from 'semantic-ui-react'
 
 const style = {
   marginTop: 20,
   borderBottom: '1px solid #ccc',
   overflow: 'hidden'
-};
+}
 
 const AccountListHeader = () => {
   return (
@@ -16,13 +16,13 @@ const AccountListHeader = () => {
       </Header>
       <Button size="mini" floated="right">Link an Account</Button>
     </div>
-  );
-};
+  )
+}
 
 AccountListHeader.propTypes = {
 
 }
 
-AccountListHeader.displayName = 'AccountListHeader';
+AccountListHeader.displayName = 'AccountListHeader'
 
-export default AccountListHeader;
+export default AccountListHeader

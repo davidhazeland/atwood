@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import {List, Grid, Button, Checkbox} from 'semantic-ui-react';
+import {List, Grid, Button, Checkbox} from 'semantic-ui-react'
 
 const data = [
   {
@@ -24,7 +24,7 @@ const data = [
     time: 'Last 7 Days',
     schedule: 'Run daily at 9:00, 12:00, 16:00, 20:00'
   }
-];
+]
 
 const style = {
   marginTop: 20,
@@ -62,13 +62,13 @@ const AccountListRuleData = () => {
         })}
       </List>
     </div>
-  );
-};
+  )
+}
 
 AccountListRuleData.propTypes = {
 
 }
 
-AccountListRuleData.displayName = 'AccountListRuleData';
+AccountListRuleData.displayName = 'AccountListRuleData'
 
-export default AccountListRuleData;
+export default AccountListRuleData

@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-import {Menu} from 'semantic-ui-react';
+import {Menu} from 'semantic-ui-react'
 
 const Header = (props) => {
-  const activeItem = 'home';
+  const activeItem = 'home'
   return (
     <div className="Header">
       <Menu pointing secondary>
@@ -15,9 +15,9 @@ const Header = (props) => {
           </Menu.Menu>
         </Menu>
     </div>
-  );
-};
+  )
+}
 
-Header.propTypes = {};
+Header.propTypes = {}
 
-export default Header;
+export default Header

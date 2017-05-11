@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'
 
-import {Header, Button} from 'semantic-ui-react';
+import {Header, Button} from 'semantic-ui-react'
 
 const style = {
   marginTop: 20,
   borderBottom: '1px solid #ccc',
   overflow: 'hidden'
-};
+}
 
 const AccountRuleListHeader = () => {
   return (
@@ -16,13 +16,13 @@ const AccountRuleListHeader = () => {
       </Header>
       <Button size="mini" floated="right">Add a Rule</Button>
     </div>
-  );
-};
+  )
+}
 
 AccountRuleListHeader.propTypes = {
 
 }
 
-AccountRuleListHeader.displayName = 'AccountRuleListHeader';
+AccountRuleListHeader.displayName = 'AccountRuleListHeader'
 
-export default AccountRuleListHeader;
+export default AccountRuleListHeader
