@@ -7,26 +7,26 @@ import { connect } from 'react-redux';
 
 import DocumentTitle from 'react-document-title';
 
-import {actions as myActions, selectors as mySelectors} from 'businesses/account-rule-list';
+import {actions as myActions, selectors as mySelectors} from 'business/rule-activity-list';
 
-import AccountRuleListComponent from '../components/account-rule-list';
+import RuleActivityListComponent from '../components/rule-activity-list';
 
-class AccountRuleList extends Component {
+class RuleActivityList extends Component {
   componentWillUnmount() {
     this.props.actions.clear();
   }
 
   render() {
-    const title = 'Account Rule List';
+    const title = 'Rule Activity List';
     return (
     <DocumentTitle title={title}>
-      <AccountRuleListComponent {...this.props}/>
+      <RuleActivityListComponent {...this.props}/>
     </DocumentTitle>
     );
   }
 }
 
-AccountRuleList.propTypes = {
+RuleActivityList.propTypes = {
   actions: PropTypes.object.isRequired
 };
 
@@ -41,4 +41,4 @@ function mapDispatchToProps(dispatch) {
   };
   return { actions: bindActionCreators(actions, dispatch) };
 }
-export default connect(mapStateToProps, mapDispatchToProps)(AccountRuleList);
+export default connect(mapStateToProps, mapDispatchToProps)(RuleActivityList);

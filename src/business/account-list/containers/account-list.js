@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 
 import DocumentTitle from 'react-document-title';
 
-import {actions as myActions, selectors as mySelectors} from 'businesses/account-list';
+import {actions as myActions, selectors as mySelectors} from 'business/account-list';
 
 import AccountListComponent from '../components/account-list';
 

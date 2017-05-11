@@ -1,27 +1,24 @@
-import 'babel-polyfill';
-import 'whatwg-fetch';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-import React from 'react';
-import { render } from 'react-dom';
+import { Provider } from 'react-redux'
+import { ConnectedRouter } from 'react-router-redux'
+import createHistory from 'history/createBrowserHistory'
 
-import { Provider } from 'react-redux';
-import { Router, browserHistory } from 'react-router';
-import { syncHistoryWithStore } from 'react-router-redux';
+import configureStore from './stores'
+import { createRoutes } from './business/base'
 
-import configureStore from './stores';
-import createRoutes from './routes/base';
+const history = createHistory()
 
-// Store
-const store = configureStore();
+const store = configureStore(history)
+const routes = createRoutes(store)
 
-const history = syncHistoryWithStore(browserHistory, store);
-const routes = createRoutes(store);
-
-render(
+ReactDOM.render(
   <Provider store={store}>
-    <Router history={history}>
+    { /* ConnectedRouter will use the store from Provider automatically */ }
+    <ConnectedRouter history={history}>
       {routes}
-    </Router>
+    </ConnectedRouter>
   </Provider>,
   document.getElementById('root')
-);
+)

@@ -1,6 +1,6 @@
-import RuleActivityList, { name as nameOfRuleActivityList } from 'businesses/rule-activity-list';
-import AccountRuleList, { name as nameOfAccountRuleList } from 'businesses/account-rule-list';
-import AccountList, { name as nameOfAccountList } from 'businesses/account-list';
+import RuleActivityList, { name as nameOfRuleActivityList } from 'business/rule-activity-list';
+import AccountRuleList, { name as nameOfAccountRuleList } from 'business/account-rule-list';
+import AccountList, { name as nameOfAccountList } from 'business/account-list';
 const reducers = {
   [nameOfRuleActivityList]: RuleActivityList,
   [nameOfAccountRuleList]: AccountRuleList,
