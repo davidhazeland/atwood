@@ -1,6 +1,6 @@
 import React from 'react';
 
-import component from './components/app';
+import component from './containers/app';
 
 import {Route} from 'react-router';
 

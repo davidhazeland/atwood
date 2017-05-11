@@ -3,7 +3,7 @@ require('semantic-ui-css/semantic.min.css');
 import React from 'react';
 import {StyleRoot} from 'radium';
 
-import { Route } from 'react-router'
+import { Switch, Route } from 'react-router'
 
 import Header from '../containers/header'
 import Content from './content';
@@ -17,9 +17,11 @@ const App = (props) => {
     <StyleRoot>
       <Header path={props.path}/>
       <Content>
-        <Route exact path="/accounts" component={AccountList}/>
-        <Route path="/accounts/:id/rules" component={AccountRuleList}/>
-        <Route path="/rules/:id/activities" component={RuleActivityList}/>
+        <Switch>
+          <Route exact path="/accounts" component={AccountList}/>
+          <Route path="/accounts/:id/rules" component={AccountRuleList}/>
+          <Route path="/rules/:id/activities" component={RuleActivityList}/>
+        </Switch>
       </Content>
     </StyleRoot>
   );
