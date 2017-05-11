@@ -3,7 +3,7 @@ import React from 'react'
 import {Menu} from 'semantic-ui-react'
 
 const Header = (props) => {
-  const activeItem = 'home'
+  const activeItem = 'messages'
   return (
     <div className="Header">
       <Menu pointing secondary>

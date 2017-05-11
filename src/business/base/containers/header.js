@@ -17,11 +17,12 @@ class Header extends Component {
 Header.propTypes = { actions: PropTypes.object.isRequired }
 function mapStateToProps(state) {
   return {
+    
   }
 }
 function mapDispatchToProps(dispatch) {
   const actions = {
-    
+
   }
   return { actions: bindActionCreators(actions, dispatch) }
 }

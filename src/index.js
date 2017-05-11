@@ -3,21 +3,21 @@ import ReactDOM from 'react-dom'
 
 import { Provider } from 'react-redux'
 import { ConnectedRouter } from 'react-router-redux'
+import { Route } from 'react-router';
 import createHistory from 'history/createBrowserHistory'
 
 import configureStore from './stores'
-import { createRoutes } from './business/base'
+import { component } from './business/base'
 
 const history = createHistory()
 
 const store = configureStore(history)
-const routes = createRoutes(store)
 
 ReactDOM.render(
   <Provider store={store}>
     { /* ConnectedRouter will use the store from Provider automatically */ }
     <ConnectedRouter history={history}>
-      {routes}
+      <Route path="/" component={component}/>
     </ConnectedRouter>
   </Provider>,
   document.getElementById('root')
