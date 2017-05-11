@@ -12,10 +12,9 @@
     "odem": "^0.2.4",
     "radium": "^0.18.2",
     "react": "15.4.2",
+    "react-document-title": "2.0.2",
     "react-dom": "15.4.2",
     "react-redux": "^5.0.4",
-    "react-router-redux": "next",
-    "react-document-title": "2.0.2",
     "react-router-redux": "next",
     "redux": "3.6.0",
     "redux-actions": "^2.0.2",
@@ -23,7 +22,8 @@
     "redux-logger": "^3.0.1",
     "redux-saga": "^0.15.3",
     "semantic-ui-css": "^2.2.10",
-    "semantic-ui-react": "0.67.0"
+    "semantic-ui-react": "0.67.0",
+    "store": "^2.0.4"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"

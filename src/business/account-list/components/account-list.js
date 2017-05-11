@@ -3,11 +3,15 @@ import React from 'react'
 import Header from './account-list-header'
 import Data from './account-list-data'
 
-const AccountList = () => {
+const AccountList = (props) => {
+  const {
+    data
+  } = props;
+
   return (
     <div className="AccountList">
       <Header/>
-      <Data/>
+      <Data data={data}/>
     </div>
   )
 }

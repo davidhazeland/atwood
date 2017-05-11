@@ -2,39 +2,14 @@ import React from 'react'
 
 import {List, Grid, Button} from 'semantic-ui-react'
 
-const data = [
-  {
-    name: 'Mokona #1',
-    number: 4,
-    today: '3.5X',
-    yesterday: '3.5X',
-    last3Days: '3.5X',
-    last7Days: '3.5X'
-  },
-  {
-    name: 'Mokona #1',
-    number: 4,
-    today: '3.5X',
-    yesterday: '3.5X',
-    last3Days: '3.5X',
-    last7Days: '3.5X'
-  },
-  {
-    name: 'Mokona #1',
-    number: 4,
-    today: '3.5X',
-    yesterday: '3.5X',
-    last3Days: '3.5X',
-    last7Days: '3.5X'
-  }
-]
-
 const style = {
   marginTop: 20,
   border: '2px solid #ccc'
 }
 
-const AccountListData = () => {
+const AccountListData = (props) => {
+  const {data} = props;
+
   return (
     <div className="AccountListData" style={style}>
       <List divided relaxed>
@@ -45,23 +20,23 @@ const AccountListData = () => {
                 {item.name}
               </Grid.Column>
               <Grid.Column width="2">
-                {item.number} rules applied
+                4 rules applied
               </Grid.Column>
               <Grid.Column width="2" textAlign="center">
                 <div>Today</div>
-                <div>{item.today}</div>
+                <div>3.5X</div>
               </Grid.Column>
               <Grid.Column width="2" textAlign="center">
                 <div>Yesterday</div>
-                <div>{item.yesterday}</div>
+                <div>3.5X</div>
               </Grid.Column>
               <Grid.Column width="2" textAlign="center">
                 <div>Last 3 Days</div>
-                <div>{item.last3Days}</div>
+                <div>3.5X</div>
               </Grid.Column>
               <Grid.Column width="2" textAlign="center">
                 <div>Last 7 Days</div>
-                <div>{item.last7Days}</div>
+                <div>3.5X</div>
               </Grid.Column>
               <Grid.Column width="4">
                 <Button size="mini">Advert Manager</Button>

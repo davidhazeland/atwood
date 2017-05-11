@@ -12,6 +12,10 @@ import {actions as myActions, selectors as mySelectors} from 'business/account-l
 import AccountListComponent from '../components/account-list'
 
 class AccountList extends Component {
+  componentWillMount() {
+    this.props.actions.initialize()
+  }
+
   componentWillUnmount() {
     this.props.actions.clear()
   }
