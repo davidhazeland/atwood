@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
 import { List, Grid, Button, Checkbox } from 'semantic-ui-react'
 
 const style = {
@@ -20,7 +21,9 @@ const AccountListRuleData = (props) => {
                 <Checkbox toggle checked={item.active}/>
               </Grid.Column>
               <Grid.Column width="2">
-                {item.name}
+                <Link to={`/rules/${item.id}/activities`}>
+                  {item.name}
+                </Link>
               </Grid.Column>
               <Grid.Column width="2">
                 {item.targetType}
