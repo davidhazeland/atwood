@@ -8,7 +8,7 @@ const style = {
 }
 
 const AccountListData = (props) => {
-  const {data} = props;
+  const {data} = props
 
   return (
     <div className="AccountListData" style={style}>

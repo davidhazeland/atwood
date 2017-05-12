@@ -6,7 +6,7 @@ import Data from './account-list-data'
 const AccountList = (props) => {
   const {
     data
-  } = props;
+  } = props
 
   return (
     <div className="AccountList">

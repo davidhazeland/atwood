@@ -7,7 +7,7 @@ const base = {
 
 const env = {
   development: {
-    apiBaseURL: 'https://jumparena.herokuapp.com/api'
+    apiBaseURL: 'http://localhost:4000'
   },
   test: {
 

@@ -6,10 +6,9 @@ import API from 'api/account'
 
 export function* handle({payload}) {
   try {
-    const {data} = yield call(API.fetch)
-
+    const response = yield call(API.fetch)
     yield put(actions.set({
-      data
+      data: response.data
     }))
   }
   catch (error) {

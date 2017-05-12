@@ -1,0 +1,69 @@
+{
+  "advert_accounts": [
+    {
+      "id": 1,
+      "account_id": "1860230220918580",
+      "name": "Mokona #1",
+      "currency": "USD",
+      "timezone_name": "America\/Los_Angeles",
+      "created_at": "2017-05-02 07:34:58",
+      "updated_at": "2017-05-02 07:34:58"
+    }
+  ],
+
+  "rules": [
+    {
+      "active": true,
+      "name": "Spent $20 NO SALES",
+      "description": "OFF When No Sales After $20 Spent",
+      "target_type": "active_adsets",
+      "target": [],
+      "condition": null,
+      "time_range": "last_7d",
+      "action_type": "pause",
+      "action_params": [],
+      "frequency_type": "daily_at",
+      "frequency": [
+        "9:00",
+        "12:00",
+        "16:00",
+        "20:00"
+      ],
+      "created_at": {
+        "date": "2017-05-08 02:56:32.000000",
+        "timezone_type": 3,
+        "timezone": "UTC"
+      },
+      "updated_at": {
+        "date": "2017-05-08 02:56:32.000000",
+        "timezone_type": 3,
+        "timezone": "UTC"
+      }
+    },
+    {
+      "active": true,
+      "name": "ROAS < 2.5X",
+      "description": "Pause When No Sales After $20 Spent",
+      "target_type": "active_adsets",
+      "target": [],
+      "condition": null,
+      "time_range": "last_3d",
+      "action_type": "pause",
+      "action_params": [],
+      "frequency_type": "daily_at",
+      "frequency": [
+        "9:00"
+      ],
+      "created_at": {
+        "date": "2017-05-08 03:03:08.000000",
+        "timezone_type": 3,
+        "timezone": "UTC"
+      },
+      "updated_at": {
+        "date": "2017-05-08 03:03:08.000000",
+        "timezone_type": 3,
+        "timezone": "UTC"
+      }
+    }
+  ]
+}

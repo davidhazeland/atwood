@@ -8,4 +8,12 @@ const api = create({
   token: get()
 })
 
-export default api
+export default {
+  request(...params) {
+    return api.request(...params)
+      .then(response => response.data)
+      .catch(error => {
+        throw error
+      })
+  }
+}
