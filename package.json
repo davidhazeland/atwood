@@ -28,6 +28,7 @@
     "store": "^2.0.4"
   },
   "devDependencies": {
+    "json-server": "^0.10.0",
     "react-scripts": "0.9.5"
   },
   "scripts": {

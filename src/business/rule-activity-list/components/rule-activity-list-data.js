@@ -2,27 +2,16 @@ import React from 'react'
 
 import {Table} from 'semantic-ui-react'
 
-const data = [
-  {
-    checkedTime: '2017-05-06 16:00:10',
-    result: '9 advert sets had turned off'
-  },
-  {
-    checkedTime: '2017-05-06 16:00:10',
-    result: '9 advert sets had turned off'
-  },
-  {
-    checkedTime: '2017-05-06 16:00:10',
-    result: '9 advert sets had turned off'
-  }
-]
-
 const style = {
   marginTop: 20,
   border: '2px solid #ccc'
 }
 
-const RuleActivityListData = () => {
+const RuleActivityListData = (props) => {
+  const {
+    data
+  } = props
+
   return (
     <div className="RuleActivityListData" style={style}>
       <Table>

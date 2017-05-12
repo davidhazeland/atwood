@@ -65,5 +65,20 @@
         "timezone": "UTC"
       }
     }
+  ],
+
+  "activities": [
+    {
+      "checkedTime": "2017-05-06 16:00:10",
+      "result": "9 advert sets had turned off"
+    },
+    {
+      "checkedTime": "2017-05-06 16:00:10",
+      "result": "9 advert sets had turned off"
+    },
+    {
+      "checkedTime": "2017-05-06 16:00:10",
+      "result": "9 advert sets had turned off"
+    }
   ]
 }

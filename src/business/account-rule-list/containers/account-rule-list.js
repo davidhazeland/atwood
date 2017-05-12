@@ -51,8 +51,8 @@ function mapStateToProps(state, ownProps) {
 }
 function mapDispatchToProps(dispatch) {
   const actions = {
-    ...myActions,
-    clearList: listActions.clear
+    clearList: listActions.clear,
+    ...myActions
   }
   return { actions: bindActionCreators(actions, dispatch) }
 }
