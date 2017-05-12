@@ -35,7 +35,7 @@ const AccountListRuleData = (props) => {
                 <div>Run daily at {item.frequency.join(', ')}</div>
               </Grid.Column>
               <Grid.Column width="3">
-                <Button size="mini">Edit</Button>
+                <Button size="mini" primary>Edit</Button>
                 <Button size="mini">Deactive</Button>
               </Grid.Column>
             </List.Item>

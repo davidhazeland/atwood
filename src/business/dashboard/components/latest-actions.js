@@ -7,7 +7,7 @@ const LatestActions = (props) => {
 
   return (
     <div className="LatestActions" style={{marginTop: 20}}>
-      <Table>
+      <Table basic>
         <Table.Header>
           <Table.Row>
             <Table.HeaderCell colSpan="4">LATEST ACTIONS</Table.HeaderCell>

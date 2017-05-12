@@ -14,7 +14,7 @@ const AccountRuleListHeader = () => {
       <Header as="h3" floated="left">
         Rules for Mokona #1
       </Header>
-      <Button size="mini" floated="right">Add a Rule</Button>
+      <Button size="mini" floated="right" positive>Add a Rule</Button>
     </div>
   )
 }

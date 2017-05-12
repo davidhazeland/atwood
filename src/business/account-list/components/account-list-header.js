@@ -14,7 +14,7 @@ const AccountListHeader = () => {
       <Header as="h3" floated="left">
         Accounts
       </Header>
-      <Button size="mini" floated="right">Link an Account</Button>
+      <Button size="mini" floated="right" positive>Link an Account</Button>
     </div>
   )
 }

@@ -44,7 +44,7 @@ const AccountListData = (props) => {
                 </Grid.Column>
                 <Grid.Column width="4">
                   <Button size="mini">Advert Manager</Button>
-                  <Button size="mini">Add Rule</Button>
+                  <Button size="mini" positive>Add Rule</Button>
                 </Grid.Column>
               </Grid>
             </List.Item>
