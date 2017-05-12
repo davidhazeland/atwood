@@ -1,37 +1,15 @@
 import React from 'react'
 
-import {List, Grid, Button, Checkbox} from 'semantic-ui-react'
-
-const data = [
-  {
-    active: true,
-    name: '300K NO SALES',
-    status: 'All Active Advert Sets',
-    time: 'Last 7 Days',
-    schedule: 'Run daily at 9:00, 12:00, 16:00, 20:00'
-  },
-  {
-    active: false,
-    name: '300K NO SALES',
-    status: 'All Active Advert Sets',
-    time: 'Last 7 Days',
-    schedule: 'Run daily at 9:00, 12:00, 16:00, 20:00'
-  },
-  {
-    active: true,
-    name: '300K NO SALES',
-    status: 'All Active Advert Sets',
-    time: 'Last 7 Days',
-    schedule: 'Run daily at 9:00, 12:00, 16:00, 20:00'
-  }
-]
+import { List, Grid, Button, Checkbox } from 'semantic-ui-react'
 
 const style = {
   marginTop: 20,
   border: '2px solid #ccc'
 }
 
-const AccountListRuleData = () => {
+const AccountListRuleData = (props) => {
+  const { data } = props
+
   return (
     <div className="AccountListRuleData" style={style}>
       <List divided relaxed>
@@ -45,13 +23,13 @@ const AccountListRuleData = () => {
                 {item.name}
               </Grid.Column>
               <Grid.Column width="2">
-                {item.status}
+                {item.targetType}
               </Grid.Column>
               <Grid.Column width="2" textAlign="center">
-                <div>{item.time}</div>
+                <div>{item.timeRange}</div>
               </Grid.Column>
               <Grid.Column width="5" textAlign="center">
-                <div>{item.schedule}</div>
+                <div>Run daily at {item.frequency.join(', ')}</div>
               </Grid.Column>
               <Grid.Column width="3">
                 <Button size="mini">Edit</Button>

@@ -1,13 +1,15 @@
 import { sagas as RuleActivityList } from 'business/rule-activity-list'
 import { sagas as AccountRuleList } from 'business/account-rule-list'
 import { sagas as AccountList } from 'business/account-list'
+import { sagas as List } from 'ironlake/businesses/list'
 import { flatten } from 'lodash/array'
 import { values } from 'lodash/object'
 
 const sagasList = [
   RuleActivityList,
   AccountRuleList,
-  AccountList
+  AccountList,
+  List
 ]
 import { delay } from 'redux-saga'
 import {
