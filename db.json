@@ -69,15 +69,30 @@
 
   "activities": [
     {
-      "checkedTime": "2017-05-06 16:00:10",
+      "checked_time": "2017-05-06 16:00:10",
       "result": "9 advert sets had turned off"
     },
     {
-      "checkedTime": "2017-05-06 16:00:10",
+      "checked_time": "2017-05-06 16:00:10",
       "result": "9 advert sets had turned off"
     },
     {
-      "checkedTime": "2017-05-06 16:00:10",
+      "checked_time": "2017-05-06 16:00:10",
+      "result": "9 advert sets had turned off"
+    }
+  ],
+
+  "actions": [
+    {
+      "account": "Mokona #1",
+      "rule": "LESS THAN 2.5X ROAS",
+      "checked_time": "2017-05-06 16:00:10",
+      "result": "9 advert sets had turned off"
+    },
+    {
+      "account": "Mokona #1",
+      "rule": "LESS THAN 2.5X ROAS",
+      "checked_time": "2017-05-06 16:00:10",
       "result": "9 advert sets had turned off"
     }
   ]

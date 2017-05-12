@@ -11,6 +11,7 @@ import Header from '../containers/header'
 import {component as AccountList} from 'business/account-list'
 import {component as AccountRuleList} from 'business/account-rule-list'
 import {component as RuleActivityList} from 'business/rule-activity-list'
+import {component as Dashboard} from 'business/dashboard'
 
 const App = (props) => {
   return (
@@ -18,6 +19,7 @@ const App = (props) => {
       <Header path={props.path}/>
       <Container>
         <Switch>
+          <Route path="/dashboard" component={Dashboard}/>
           <Route exact path="/accounts" component={AccountList}/>
           <Route path="/accounts/:id/rules" component={AccountRuleList}/>
           <Route path="/rules/:id/activities" component={RuleActivityList}/>
