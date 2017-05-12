@@ -38,6 +38,6 @@
     "build": "NODE_PATH=src react-scripts build",
     "test": "NODE_PATH=src react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "fake-api": "nodemon server.js"
+    "server": "nodemon server.js"
   }
 }

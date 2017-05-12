@@ -1,10 +1,11 @@
 import { createStore, applyMiddleware } from 'redux'
 import { createLogger } from 'redux-logger'
 import createSagaMiddleware from 'redux-saga'
-import {routerMiddleware} from 'react-router-redux'
+import { routerMiddleware } from 'react-router-redux'
+import { combineSagas } from 'odem/utils/saga'
 
 const reducers = require('../reducers')
-const sagas = require('../sagas')
+import * as sagas from '../sagas'
 
 const loggerMiddleware = createLogger({
   predicate: () => process.env.NODE_ENV === 'development'
@@ -21,7 +22,8 @@ export default function (history, initialState) {
     initialState,
     window.devToolsExtension ? window.devToolsExtension() : f => f)
 
-  sagaMiddleware.run(sagas)
+  const rootSaga = combineSagas(sagas)
+  sagaMiddleware.run(rootSaga)
 
   if (module.hot) {
     // Enable Webpack hot module replacement for reducers
