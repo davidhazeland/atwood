@@ -13,6 +13,7 @@
 
   "rules": [
     {
+      "id": 1,
       "active": true,
       "name": "Spent $20 NO SALES",
       "description": "OFF When No Sales After $20 Spent",
@@ -41,6 +42,7 @@
       }
     },
     {
+      "id": 2,
       "active": true,
       "name": "ROAS < 2.5X",
       "description": "Pause When No Sales After $20 Spent",
