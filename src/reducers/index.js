@@ -1,7 +1,7 @@
 import RuleActivityList, { name as nameOfRuleActivityList } from 'business/rule-activity-list'
 import AccountRuleList, { name as nameOfAccountRuleList } from 'business/account-rule-list'
 import AccountList, { name as nameOfAccountList } from 'business/account-list'
-import List, { name as nameOfList } from 'ironlake/businesses/list'
+import List, { name as nameOfList } from 'raket-react/business/list'
 const reducers = {
   [nameOfRuleActivityList]: RuleActivityList,
   [nameOfAccountRuleList]: AccountRuleList,

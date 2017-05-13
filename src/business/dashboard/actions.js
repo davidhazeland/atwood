@@ -1,5 +1,5 @@
 import { createAction } from 'redux-actions'
-import {actions as listActions} from 'ironlake/businesses/list'
+import {actions as listActions} from 'raket-react/business/list'
 
 import API from 'api/action'
 

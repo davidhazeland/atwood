@@ -1167,7 +1167,7 @@ clap@^1.0.9:
   dependencies:
     chalk "^1.1.3"
 
-classnames@2.2.5, classnames@^2.1.5:
+classnames@^2.1.5:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
 
@@ -1574,10 +1574,6 @@ cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":
   resolved "https://registry.yarnpkg.com/cssstyle/-/cssstyle-0.2.37.tgz#541097234cb2513c83ceed3acddc27ff27987d54"
   dependencies:
     cssom "0.3.x"
-
-"custom-semantic-ui@git+ssh://git@github.com/ironnext/custom-semantic-ui.git":
-  version "0.0.1"
-  resolved "git+ssh://git@github.com/ironnext/custom-semantic-ui.git#bca06bcbee90c39d61a968da9f0551b8fceb89bc"
 
 d@1:
   version "1.0.0"
@@ -2608,15 +2604,6 @@ he@1.1.x:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/he/-/he-1.1.1.tgz#93410fd21b009735151f8868c2f271f3427e23fd"
 
-history@^3.0.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/history/-/history-3.3.0.tgz#fcedcce8f12975371545d735461033579a6dae9c"
-  dependencies:
-    invariant "^2.2.1"
-    loose-envify "^1.2.0"
-    query-string "^4.2.2"
-    warning "^3.0.0"
-
 history@^4.5.1, history@^4.6.0, history@^4.6.1:
   version "4.6.1"
   resolved "https://registry.yarnpkg.com/history/-/history-4.6.1.tgz#911cf8eb65728555a94f2b12780a0c531a14d2fd"
@@ -2738,7 +2725,7 @@ https-browserify@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-0.0.1.tgz#3f91365cabe60b77ed0ebba24b454e3e09d95a82"
 
-humps@2.0.0, humps@^2.0.0:
+humps@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/humps/-/humps-2.0.0.tgz#dd4a423e9784626fe7b9f19fde0baff659b40173"
 
@@ -2838,10 +2825,6 @@ interpret@^1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.0.3.tgz#cbc35c62eeee73f19ab7b10a801511401afc0f90"
 
-intl@^1.2:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/intl/-/intl-1.2.5.tgz#82244a2190c4e419f8371f5aa34daa3420e2abde"
-
 invariant@^2.0.0, invariant@^2.2.0, invariant@^2.2.1, invariant@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.2.tgz#9e1f56ac0acdb6bf303306f338be3b204ae60360"
@@ -2855,33 +2838,6 @@ invert-kv@^1.0.0:
 ipaddr.js@1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.3.0.tgz#1e03a52fdad83a8bbb2b25cbf4998b4cffcd3dec"
-
-"ironlake@git+ssh://git@github.com/ironnext/ironlake.git":
-  version "1.0.1"
-  resolved "git+ssh://git@github.com/ironnext/ironlake.git#3fb403ce4024adef333e7dbf4869364bdeda75bc"
-  dependencies:
-    custom-semantic-ui "git+ssh://git@github.com/ironnext/custom-semantic-ui.git"
-    deep-freeze "0.0.1"
-    dot-prop-immutable "1.3.1"
-    humps "2.0.0"
-    lodash "4.17.4"
-    moment "2.17.1"
-    react-components "git+ssh://git@github.com/ironnext/react-components.git"
-    react-document-title "2.0.2"
-    react-dom "15.4.2"
-    react-redux "5.0.3"
-    react-redux-i18n "1.8.0"
-    react-router "3.0.2"
-    react-router-redux "4.0.8"
-    redux "3.6.0"
-    redux-actions "2.0.1"
-    redux-form "6.5.0"
-    redux-logger "2.8.1"
-    redux-saga "0.14.3"
-    reselect "3.0.0"
-    semantic-ui-react "0.67.0"
-    store "2.0.3"
-    validate.js "0.11.1"
 
 is-absolute-url@^2.0.0:
   version "2.1.0"
@@ -3850,7 +3806,7 @@ minimist@^1.1.1, minimist@^1.2.0:
   dependencies:
     minimist "0.0.8"
 
-moment@2.17.1, moment@^2.17.1:
+moment@2.17.1:
   version "2.17.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.17.1.tgz#fed9506063f36b10f066c8b59a144d7faebe1d82"
 
@@ -4636,7 +4592,7 @@ promise@7.1.1, promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@15.5.8, prop-types@^15.0.0, prop-types@^15.5.4:
+prop-types@15.5.8, prop-types@^15.0.0, prop-types@^15.5.4, prop-types@^15.5.6:
   version "15.5.8"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.8.tgz#6b7b2e141083be38c8595aa51fc55775c7199394"
   dependencies:
@@ -4679,7 +4635,7 @@ qs@6.4.0, qs@~6.4.0:
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
 
-query-string@^4.1.0, query-string@^4.2.2:
+query-string@^4.1.0:
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/query-string/-/query-string-4.3.4.tgz#bbb693b9ca915c232515b228b1a02b609043dbeb"
   dependencies:
@@ -4702,7 +4658,7 @@ querystringify@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-1.0.0.tgz#6286242112c5b712fa654e526652bf6a13ff05cb"
 
-radium@0.18.2, radium@^0.18.2:
+radium@^0.18.2:
   version "0.18.2"
   resolved "https://registry.yarnpkg.com/radium/-/radium-0.18.2.tgz#1e296966d0bcac6652085cbe84c7b8ed0196d7c1"
   dependencies:
@@ -4710,6 +4666,22 @@ radium@0.18.2, radium@^0.18.2:
     exenv "^1.2.1"
     inline-style-prefixer "^2.0.5"
     rimraf "^2.6.1"
+
+"raket-react@git+ssh://git@github.com/ironnext/raket-react.git":
+  version "1.0.0"
+  resolved "git+ssh://git@github.com/ironnext/raket-react.git#b4049cbe4fa7df9018608894ed61dfcee852e6ab"
+  dependencies:
+    babel-polyfill "6.23.0"
+    deep-freeze "0.0.1"
+    dot-prop-immutable "1.3.1"
+    odem "^0.2.4"
+    react "15.4.2"
+    react-redux "^5.0.4"
+    redux "3.6.0"
+    redux-actions "^2.0.2"
+    redux-form "^6.7.0"
+    redux-saga "^0.15.3"
+    reselect "^3.0.1"
 
 randomatic@^1.1.3:
   version "1.1.6"
@@ -4738,25 +4710,6 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.1.7:
     ini "~1.3.0"
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
-
-react-checkbox-group@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/react-checkbox-group/-/react-checkbox-group-3.1.0.tgz#53dd3a667b627bc28adb44ced98275f81171d205"
-
-"react-components@git+ssh://git@github.com/ironnext/react-components.git":
-  version "0.13.3"
-  resolved "git+ssh://git@github.com/ironnext/react-components.git#18fa76a1e8759e5bd1f147b6af8bc3069553dbb0"
-  dependencies:
-    classnames "2.2.5"
-    lodash "4.17.4"
-    radium "0.18.2"
-    react-checkbox-group "3.1.0"
-    react-prop-types "^0.4.0"
-    react-redux "5.0.3"
-    react-redux-i18n "1.8.0"
-    redux "3.6.0"
-    redux-form "6.5.0"
-    semantic-ui-react "0.67.2"
 
 react-dev-utils@^0.5.2:
   version "0.5.2"
@@ -4787,36 +4740,6 @@ react-dom@15.4.2:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
 
-react-i18nify@1.8.4:
-  version "1.8.4"
-  resolved "https://registry.yarnpkg.com/react-i18nify/-/react-i18nify-1.8.4.tgz#6173e54d4894ed25cd707617d728702f66a4d707"
-  dependencies:
-    intl "^1.2"
-    moment "^2.17.1"
-    react "^15.4.2"
-
-react-prop-types@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/react-prop-types/-/react-prop-types-0.4.0.tgz#f99b0bfb4006929c9af2051e7c1414a5c75b93d0"
-  dependencies:
-    warning "^3.0.0"
-
-react-redux-i18n@1.8.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/react-redux-i18n/-/react-redux-i18n-1.8.0.tgz#df7d687ba7146732e2bd19bf94848fc02ebd6663"
-  dependencies:
-    react-i18nify "1.8.4"
-
-react-redux@5.0.3:
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-5.0.3.tgz#86c3b68d56e74294a42e2a740ab66117ef6c019f"
-  dependencies:
-    hoist-non-react-statics "^1.0.3"
-    invariant "^2.0.0"
-    lodash "^4.2.0"
-    lodash-es "^4.2.0"
-    loose-envify "^1.1.0"
-
 react-redux@^5.0.4:
   version "5.0.4"
   resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-5.0.4.tgz#1563babadcfb2672f57f9ceaa439fb16bf85d55b"
@@ -4838,10 +4761,6 @@ react-router-dom@^4.1.1:
     prop-types "^15.5.4"
     react-router "^4.1.1"
 
-react-router-redux@4.0.8:
-  version "4.0.8"
-  resolved "https://registry.yarnpkg.com/react-router-redux/-/react-router-redux-4.0.8.tgz#227403596b5151e182377dab835b5d45f0f8054e"
-
 react-router-redux@next:
   version "5.0.0-alpha.6"
   resolved "https://registry.yarnpkg.com/react-router-redux/-/react-router-redux-5.0.0-alpha.6.tgz#7418663c2ecd3c51be856fcf28f3d1deecc1a576"
@@ -4849,16 +4768,6 @@ react-router-redux@next:
     history "^4.5.1"
     prop-types "^15.5.4"
     react-router "^4.1.1"
-
-react-router@3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/react-router/-/react-router-3.0.2.tgz#5a19156678810e01d81901f9c0fef63284b8a514"
-  dependencies:
-    history "^3.0.0"
-    hoist-non-react-statics "^1.2.0"
-    invariant "^2.2.1"
-    loose-envify "^1.2.0"
-    warning "^3.0.0"
 
 react-router@^4.1.1:
   version "4.1.1"
@@ -4924,7 +4833,7 @@ react-side-effect@^1.0.2:
     exenv "^1.2.1"
     shallowequal "^0.2.2"
 
-react@15.4.2, react@^15.4.2:
+react@15.4.2:
   version "15.4.2"
   resolved "https://registry.yarnpkg.com/react/-/react-15.4.2.tgz#41f7991b26185392ba9bae96c8889e7e018397ef"
   dependencies:
@@ -5028,14 +4937,6 @@ reduce-reducers@^0.1.0:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/reduce-reducers/-/reduce-reducers-0.1.2.tgz#fa1b4718bc5292a71ddd1e5d839c9bea9770f14b"
 
-redux-actions@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/redux-actions/-/redux-actions-2.0.1.tgz#8bae89938987bd0a446c509dfdac6b64e770765a"
-  dependencies:
-    invariant "^2.2.1"
-    lodash "^4.13.1"
-    reduce-reducers "^0.1.0"
-
 redux-actions@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/redux-actions/-/redux-actions-2.0.2.tgz#49b2d9511c240a96cb2c0ca27cb15d016faecec0"
@@ -5057,21 +4958,24 @@ redux-form@6.5.0:
     lodash "^4.17.3"
     lodash-es "^4.17.3"
 
-redux-logger@2.8.1:
-  version "2.8.1"
-  resolved "https://registry.yarnpkg.com/redux-logger/-/redux-logger-2.8.1.tgz#c00e689ba00342f44858701d76b1d73fbade72bd"
+redux-form@^6.7.0:
+  version "6.7.0"
+  resolved "https://registry.yarnpkg.com/redux-form/-/redux-form-6.7.0.tgz#9fb0769e76f14febf1dd7686e02c4ab2d6f953aa"
   dependencies:
-    deep-diff "0.3.4"
+    deep-equal "^1.0.1"
+    es6-error "^4.0.0"
+    hoist-non-react-statics "^1.2.0"
+    invariant "^2.2.2"
+    is-promise "^2.1.0"
+    lodash "^4.17.3"
+    lodash-es "^4.17.3"
+    prop-types "^15.5.6"
 
 redux-logger@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/redux-logger/-/redux-logger-3.0.1.tgz#ae8ae4c3c55ed3dd7aa31509f0856c5d3751057a"
   dependencies:
     deep-diff "0.3.4"
-
-redux-saga@0.14.3:
-  version "0.14.3"
-  resolved "https://registry.yarnpkg.com/redux-saga/-/redux-saga-0.14.3.tgz#28cd2c5b49cf780a1de25875765724150c630513"
 
 redux-saga@^0.15.3:
   version "0.15.3"
@@ -5236,9 +5140,9 @@ requires-port@1.0.x, requires-port@1.x.x:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
 
-reselect@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/reselect/-/reselect-3.0.0.tgz#b2e35977f03048700028eaee3a8c0639e40e8f35"
+reselect@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/reselect/-/reselect-3.0.1.tgz#efdaa98ea7451324d092b2b2163a6a1d7a9a2147"
 
 resolve-from@^1.0.0:
   version "1.0.1"
@@ -5323,15 +5227,6 @@ semantic-ui-react@0.67.0:
     babel-runtime "^6.22.0"
     classnames "^2.1.5"
     debug "^2.4.5"
-    lodash "^4.17.2"
-
-semantic-ui-react@0.67.2:
-  version "0.67.2"
-  resolved "https://registry.yarnpkg.com/semantic-ui-react/-/semantic-ui-react-0.67.2.tgz#30c1271239fae724a96117cea087bf3084f8480e"
-  dependencies:
-    babel-runtime "^6.22.0"
-    classnames "^2.1.5"
-    debug "^2.6.3"
     lodash "^4.17.2"
 
 semantic-ui-react@^0.68.3:
@@ -5574,10 +5469,6 @@ steno@^0.4.1:
   resolved "https://registry.yarnpkg.com/steno/-/steno-0.4.4.tgz#071105bdfc286e6615c0403c27e9d7b5dcb855cb"
   dependencies:
     graceful-fs "^4.1.3"
-
-store@2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/store/-/store-2.0.3.tgz#8a423bc1ea9c1db0f5299d62d04a1b4c49f0c7c6"
 
 store@^2.0.4:
   version "2.0.4"
@@ -6018,7 +5909,7 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "~1.0.0"
     spdx-expression-parse "~1.0.0"
 
-validate.js@0.11.1, validate.js@^0.11.1:
+validate.js@^0.11.1:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/validate.js/-/validate.js-0.11.1.tgz#f51c3c6c4a56e6380a20a7eb104245037f2a540d"
 

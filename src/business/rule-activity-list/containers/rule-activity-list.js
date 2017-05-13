@@ -8,7 +8,7 @@ import { connect } from 'react-redux'
 import DocumentTitle from 'react-document-title'
 
 import {actions as myActions, selectors as mySelectors} from 'business/rule-activity-list'
-import {actions as listActions, selectors as listSelectors} from 'ironlake/businesses/list';
+import {actions as listActions, selectors as listSelectors} from 'raket-react/business/list';
 
 import RuleActivityListComponent from '../components/rule-activity-list'
 
