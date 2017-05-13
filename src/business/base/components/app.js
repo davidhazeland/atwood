@@ -9,6 +9,7 @@ import {Container} from 'semantic-ui-react'
 import Header from '../containers/header'
 
 import {component as AccountList} from 'business/account-list'
+import {component as AccountRuleAdd} from 'business/account-rule-add'
 import {component as AccountRuleList} from 'business/account-rule-list'
 import {component as RuleActivityList} from 'business/rule-activity-list'
 import {component as Dashboard} from 'business/dashboard'
@@ -21,7 +22,8 @@ const App = (props) => {
         <Switch>
           <Route path="/dashboard" component={Dashboard}/>
           <Route exact path="/accounts" component={AccountList}/>
-          <Route path="/accounts/:id/rules" component={AccountRuleList}/>
+          <Route exact path="/accounts/:id/rules" component={AccountRuleList}/>
+          <Route path="/accounts/:id/rules/add" component={AccountRuleAdd}/>
           <Route path="/rules/:id/activities" component={RuleActivityList}/>
         </Switch>
       </Container>
