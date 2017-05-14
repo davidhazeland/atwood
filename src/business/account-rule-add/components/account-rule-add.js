@@ -11,7 +11,7 @@ const AccountRuleAdd = () => {
   return (
     <div className="AccountRuleAdd">
       <Header as="h3" dividing style={{marginTop: 20}}>
-        Accounts
+        Add a Rule for Mokano #1
       </Header>
 
       <Grid>

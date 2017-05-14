@@ -6,9 +6,9 @@ import { Field, SelectBox, TextBox } from 'odem/components'
 
 import { CONDITION_TYPE_LIST, EXPRESSION_LIST, TIME_RANGE_LIST } from 'constants'
 
-const AccountRuleAddConditions = () => {
+const AccountRuleAddCondition = () => {
   return (
-    <div className="AccountRuleAddConditions">
+    <div className="AccountRuleAddCondition">
       <p>ALL of the following match</p>
 
       <Grid>
@@ -32,18 +32,18 @@ const AccountRuleAddConditions = () => {
             }}
             />
         </Grid.Column>
-        <Grid.Column width="5">
+        <Grid.Column width="4">
           <Field
             name="conditionValue"
             component={TextBox}
             />
         </Grid.Column>
-        <Grid.Column width="1" verticalAlign="middle">
+        <Grid.Column width="2" verticalAlign="middle">
           <Icon name="trash"/>
         </Grid.Column>
       </Grid>
 
-      <Button style={{margin: '15px 0'}}>Add Condition</Button>
+      <Button size="mini" style={{margin: '15px 0'}}>Add Condition</Button>
 
       <FormComponent.Group inline>
         <Field
@@ -60,10 +60,10 @@ const AccountRuleAddConditions = () => {
   )
 }
 
-AccountRuleAddConditions.propTypes = {
+AccountRuleAddCondition.propTypes = {
 
 }
 
-AccountRuleAddConditions.displayName = 'AccountRuleAddConditions'
+AccountRuleAddCondition.displayName = 'AccountRuleAddCondition'
 
-export default AccountRuleAddConditions
+export default AccountRuleAddCondition
