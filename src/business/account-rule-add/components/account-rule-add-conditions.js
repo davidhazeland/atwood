@@ -1,15 +1,10 @@
+
 import React from 'react'
 
 import { Grid, Icon, Button, Form as FormComponent } from 'semantic-ui-react'
 import { Field, SelectBox, TextBox } from 'odem/components'
 
-const conditionTypeList = [
-  {key: '1', text: 'ROAS', value: '1'}
-]
-
-const conditionExpressionList = [
-  {key: '1', text: 'is less than', value: '1'}
-]
+import { CONDITION_TYPE_LIST, EXPRESSION_LIST, TIME_RANGE_LIST } from 'constants'
 
 const AccountRuleAddConditions = () => {
   return (
@@ -22,7 +17,7 @@ const AccountRuleAddConditions = () => {
             name="conditionType"
             component={SelectBox}
             componentProps={{
-              options: conditionTypeList,
+              options: CONDITION_TYPE_LIST,
               fluid: true
             }}
             />
@@ -32,7 +27,7 @@ const AccountRuleAddConditions = () => {
             name="conditionExpression"
             component={SelectBox}
             componentProps={{
-              options: conditionTypeList,
+              options: EXPRESSION_LIST,
               fluid: true
             }}
             />
@@ -57,7 +52,7 @@ const AccountRuleAddConditions = () => {
           inline="true"
           component={SelectBox}
           componentProps={{
-            options: conditionTypeList
+            options: TIME_RANGE_LIST
           }}
           />
       </FormComponent.Group>
