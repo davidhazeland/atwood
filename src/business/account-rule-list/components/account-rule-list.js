@@ -5,6 +5,7 @@ import Data from './account-rule-list-data'
 
 const AccountRuleList = (props) => {
   const {
+    accountId,
     List: {
       data
     }
@@ -12,7 +13,7 @@ const AccountRuleList = (props) => {
 
   return (
     <div className="AccountRuleList">
-      <Header/>
+      <Header accountId={accountId}/>
       <Data data={data}/>
     </div>
   )
