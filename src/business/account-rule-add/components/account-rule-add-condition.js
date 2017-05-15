@@ -1,49 +1,19 @@
-
 import React from 'react'
 
-import { Grid, Icon, Button, Form as FormComponent } from 'semantic-ui-react'
-import { Field, SelectBox, TextBox } from 'odem/components'
+import { FieldArray } from 'redux-form'
+import { Form as FormComponent } from 'semantic-ui-react'
+import { Field, SelectBox } from 'odem/components'
 
-import { CONDITION_TYPE_LIST, EXPRESSION_LIST, TIME_RANGE_LIST } from 'constants'
+import ConditionList from './account-rule-add-condition-list'
+
+import { TIME_RANGE_LIST } from 'constants'
 
 const AccountRuleAddCondition = () => {
   return (
     <div className="AccountRuleAddCondition">
       <p>ALL of the following match</p>
 
-      <Grid>
-        <Grid.Column width="6">
-          <Field
-            name="conditionType"
-            component={SelectBox}
-            componentProps={{
-              options: CONDITION_TYPE_LIST,
-              fluid: true
-            }}
-            />
-        </Grid.Column>
-        <Grid.Column width="4">
-          <Field
-            name="conditionExpression"
-            component={SelectBox}
-            componentProps={{
-              options: EXPRESSION_LIST,
-              fluid: true
-            }}
-            />
-        </Grid.Column>
-        <Grid.Column width="4">
-          <Field
-            name="conditionValue"
-            component={TextBox}
-            />
-        </Grid.Column>
-        <Grid.Column width="2" verticalAlign="middle">
-          <Icon name="trash"/>
-        </Grid.Column>
-      </Grid>
-
-      <Button size="mini" style={{margin: '15px 0'}}>Add Condition</Button>
+      <FieldArray name="conditions" component={ConditionList}/>
 
       <FormComponent.Group inline>
         <Field
